@@ -21,7 +21,9 @@ public class WalletSpringApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception
 	{
 		wallet.save(new Item("お小遣い",100000));
+		wallet.save(new Item("お小遣い",20000));
 		wallet.save(new Item("家賃",-4000,"10月分"));
+		wallet.save(new Item("家賃",-3000,"10月分"));
 		wallet.save(new Item("ガソリン代",-5000,"10月分"));
 		wallet.save(new Item("電気代",-2000,"10月分"));
 	}

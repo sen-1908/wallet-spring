@@ -34,6 +34,11 @@ public class Item {
         this.appendix = "N/A";
     }
 
+    /**
+     * getterでDBからフロントにデータを送る
+     * setterでDBからバックにデータを送る
+     *
+     */
     public long getId() {
         return id;
     }

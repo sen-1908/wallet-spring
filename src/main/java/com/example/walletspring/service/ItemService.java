@@ -22,4 +22,18 @@ public class ItemService {
         wallet.findAll().forEach(allItems::add);
         return allItems;
     }
+
+    public void addItem(Item item) {
+        wallet.save(item);
+    }
+
+    public void updateItem(Long itemId, Item item) {
+        if(wallet.findById(itemId) != null ) {
+            wallet.save(item);
+        }
+    }
+
+    public void deleteItem(Long itemId) {
+        wallet.deleteById(itemId);
+    }
 }
